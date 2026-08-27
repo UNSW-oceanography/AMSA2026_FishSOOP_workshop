@@ -15,7 +15,7 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 
 
-def make_map(roi: str, location: str, plot_spec=None):
+def make_map():
     '''
     roi: 'Aus+WCP', 'WCP', 'SolomonSea', 'Sol.Islands', 'Fiji'
     location: "gadi" or "mac"

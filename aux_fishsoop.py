@@ -16,15 +16,6 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 
 def make_map():
-    '''
-    roi: 'Aus+WCP', 'WCP', 'SolomonSea', 'Sol.Islands', 'Fiji'
-    location: "gadi" or "mac"
-    plot_spec: "depth" if you want a pcolor plot of the bathymetry, None if you just want a contour for 1000 m
-
-    It only creats the maps, not other plots, for the ROIs defined.
-    
-    location: gadi or mac, which will change the path to the file.
-    '''
 
     # Getting extension coordinates
     extent = [139.88709, 154.70308, -47.09012, -35.64416]
@@ -34,17 +25,10 @@ def make_map():
     fig, ax0 = plt.subplots(subplot_kw={'projection': ccrs.PlateCarree(central_longitude=180)},
                         figsize=(15, 8), dpi=100, facecolor='w', edgecolor='k')
 
-    # plot properties
+    # # plot properties
     ax0.set_extent(extent, crs=ccrs.PlateCarree())
-    coast = cfeature.GSHHSFeature(
-        scale='h', 
-        levels=[1, 6], 
-        facecolor='darkgray',  # Fill land so data shows only on water
-        edgecolor='black',
-        linewidth=0.5,
-        zorder=2  # Ensures land sits ON TOP of the pcolormesh
-    )
-    ax0.add_feature(coast)
+
+    ax0.add_feature(cfeature.LAND, facecolor="lightgray")
 
     gl = ax0.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                     linewidth=0.5, color='gray', alpha=0.5, linestyle='--')

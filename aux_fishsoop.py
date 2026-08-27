@@ -4,6 +4,7 @@ import xarray as xr
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import binned_statistic_2d
+import pandas as pd 
 
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature

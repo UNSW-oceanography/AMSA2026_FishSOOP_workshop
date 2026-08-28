@@ -3,7 +3,7 @@ This repository contains recipes to learn how to load and use FishSOOP (FVON) da
 
 In this repository you will find the recipes:
 
-1. recipe_amsa2026_fishsoop_workshop.ipynb
+1. [recipe_amsa2026_fishsoop_workshop.ipynb](https://github.com/UNSW-oceanography/imos-fishsoop-cookbook/blob/main/recipe_amsa2026_fishsoop_workshop.ipynb)
     This recipe uses the data stored in the folder "data" downloaded from [AODN portal](https://portal-beta.aodn.org.au/).
 
 

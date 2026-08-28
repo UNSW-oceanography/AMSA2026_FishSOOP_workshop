@@ -1,4 +1,4 @@
-# AMSA2026_FishSOOP_workshop
+# IMOS FishSOOP Cookbook
 This repository contains recipes to simple plots using FVON (FishSOOP) data downloaded from AODN.
 
 

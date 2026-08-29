@@ -18,7 +18,7 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 
 
-def make_map():
+def make_map(lon_min, lon_max, lat_min, lat_max):
     # Getting extension coordinates
     extent = [139.88709, 154.70308, -47.09012, -35.64416]
 

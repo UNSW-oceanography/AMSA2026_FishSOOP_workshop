@@ -20,7 +20,7 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 def make_map(lon_min, lon_max, lat_min, lat_max):
     # Getting extension coordinates
-    extent = [139.88709, 154.70308, -47.09012, -35.64416]
+    extent = [lon_min, lon_max, lat_min, lat_max]
 
     # Set up plots
     fig, ax0 = plt.subplots(subplot_kw={'projection': ccrs.PlateCarree(central_longitude=180)},

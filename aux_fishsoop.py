@@ -47,7 +47,7 @@ def make_map(lon_min, lon_max, lat_min, lat_max):
 
 
 
-def fishsoop_binning_spatialFields(fishsoop_data: pd.DataFrame, variable: str, grid_resol: float):
+def fishsoop_binning_spatialFields(fishsoop_data: pd.DataFrame, variable: str, grid_resol: float, extent: list):
     """
         Compute gridded spatial field using 2D binning.
 
@@ -61,6 +61,8 @@ def fishsoop_binning_spatialFields(fishsoop_data: pd.DataFrame, variable: str, g
             Standard ROI names. It will be used in a function to get the extent of the selected domain.
         grid_resol : float
             Grid resolution in degrees.
+        extent: list
+            lon_min, lon_max, lat_min, lat_max
 
         Returns
         -------

@@ -74,7 +74,6 @@ def fishsoop_binning_spatialFields(fishsoop_data: pd.DataFrame, variable: str, g
         Fernando Sobral 22 Apr 2026
     """
 
-    extent = [139.88709, 154.70308, -47.09012, -35.64416]
     lon_bins = np.arange(extent[0] - grid_resol, extent[1] + grid_resol, grid_resol)
     lat_bins = np.arange(extent[2] - grid_resol, extent[3] + grid_resol, grid_resol)
 
